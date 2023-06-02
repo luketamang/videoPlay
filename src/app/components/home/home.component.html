@@ -1,0 +1,18 @@
+<div class="video_wrapper">
+    <div class="video_container" *ngFor="let data of videoList">
+        <input type="text" value="" hidden>
+        <div class="image_wrapper">
+            <img 
+                src="../../../assets/youtube_circle.png" 
+                class="youtube_icon" alt="youtubeIcon" 
+                (click)="playVideo(data.id)"
+            >
+            <img 
+                [src]="data.id | getThumbnail"
+                class="glightbox"  
+                alt=""
+                (click)="playVideo(data.id)"
+            >
+        </div>
+    </div>
+</div>

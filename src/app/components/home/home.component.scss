@@ -1,0 +1,40 @@
+.video_wrapper{
+    width: 100%;
+    height: auto;
+    min-height: 450px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 24px;
+    padding: 75px;
+
+    .video_container{
+        border: 1px solid #e0e0e0;
+        border-radius: 4px;
+
+        .image_wrapper{
+            position: relative;
+            height: 100%;
+            width: 100%;
+            cursor: pointer;
+            border-radius: 4px;
+
+            .youtube_icon{
+                cursor: pointer;
+                height: 48px;
+                width: 48px;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                z-index: 2;
+            }
+
+            .glightbox{
+                position: absolute;
+                height: 100%;
+                width: 100%;
+                border-radius: 4px;
+            }
+        }
+    }
+}
